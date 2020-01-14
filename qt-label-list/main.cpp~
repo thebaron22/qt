@@ -10,7 +10,6 @@ int main(int argc, char **argv) {
  QWidget *window = new QWidget;
  window->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
  window->setStyleSheet("background-color: dimgray");
- window->showMaximized();
 
  QGridLayout *layout = new QGridLayout;
  QLabel* elem[15][2];
