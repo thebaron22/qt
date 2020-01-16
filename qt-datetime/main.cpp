@@ -14,12 +14,10 @@ int main(int argc, char **argv) {
  double rise_dsec_utc = 25;
 
  QString foo = QString::number(rise_iyear_utc) + " " + QString::number(rise_imonth_utc) + " " + QString::number(rise_iday_utc) + " " + QString::number(rise_ihour_utc) + ":" + QString::number(rise_imin_utc) + ":" + QString::number(rise_dsec_utc);
- qDebug(qPrintable(foo));
-
  QDateTime dateTime = QDateTime::fromString(foo, "yyyy M d H:mm:ss");
- qDebug(qPrintable(dateTime.toString()));
+ dateTime.setTimeSpec(Qt::UTC);
 
- QLabel label("datetime: " + dateTime.toString());
+ QLabel label("datetime: " + dateTime.toLocalTime().toString());
  label.show();
 
  return app.exec();
