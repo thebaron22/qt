@@ -3,6 +3,7 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <QStringList>
+#include <QList>
 
 
 int main(int argc, char **argv) {

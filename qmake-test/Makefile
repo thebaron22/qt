@@ -307,7 +307,7 @@ distdir: FORCE
 
 clean: compiler_clean 
 	-$(DEL_FILE) $(OBJECTS)
-	-$(DEL_FILE) *~ core *.core
+	-$(DEL_FILE) *~ core *.core qmake-test
 
 
 distclean: clean 

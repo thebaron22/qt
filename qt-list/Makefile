@@ -315,7 +315,7 @@ distdir: FORCE
 
 clean: compiler_clean 
 	-$(DEL_FILE) $(OBJECTS)
-	-$(DEL_FILE) *~ core *.core
+	-$(DEL_FILE) *~ core *.core qt-list
 
 
 distclean: clean 
