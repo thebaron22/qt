@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = qt-label-list1.0.0
-DISTDIR = /home/mick/qt-label-list/.tmp/qt-label-list1.0.0
+DISTDIR = /home/mick/qt/qt-label-list/.tmp/qt-label-list1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -lQt5Widgets -lQt5Gui -lQt5Core -lGLESv2 -lpthread -latomic 
@@ -315,7 +315,7 @@ distdir: FORCE
 
 clean: compiler_clean 
 	-$(DEL_FILE) $(OBJECTS)
-	-$(DEL_FILE) *~ core *.core qt-label-list
+	-$(DEL_FILE) *~ core *.core
 
 
 distclean: clean 

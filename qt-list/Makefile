@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = qt-list1.0.0
-DISTDIR = /home/mick/qt-list/.tmp/qt-list1.0.0
+DISTDIR = /home/mick/qt/qt-list/.tmp/qt-list1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -lQt5Widgets -lQt5Gui -lQt5Core -lGLESv2 -lpthread -latomic 
@@ -315,7 +315,7 @@ distdir: FORCE
 
 clean: compiler_clean 
 	-$(DEL_FILE) $(OBJECTS)
-	-$(DEL_FILE) *~ core *.core qt-list
+	-$(DEL_FILE) *~ core *.core
 
 
 distclean: clean 
